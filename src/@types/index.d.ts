@@ -1,4 +1,4 @@
-declare interface IExampleData {
-  name: string;
-  id: string;
+declare interface ItemData {
+  id: string,
+  name: string
 }

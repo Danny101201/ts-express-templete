@@ -1,6 +1,6 @@
-import dotenv from "dotenv";
+//use env
+import dotenv from 'dotenv';
+dotenv.config({ path: 'config.env' });
 
-dotenv.config();
-
-export const DB = process.env.DB!;
-export const PORT = parseInt(process.env.PORT!);
+export let port = process.env.PORT || 5050
+export let DB = process.env.DB as string
